@@ -35,12 +35,12 @@ $("#searchButton").on("click", function () {
 
 // When user clicks on a button, the page should grab 10 static, non-animated gifs from the GIPHY API and place them on the page. 
 
-$("topicButtons").on("click", function() {
+$(document).on("click", ".topicButtons", function() {
       // Grabbing and storing the data-animal property value from the button
-      var animal = $(this).attr("class", "data-animal");
+      var animal = $(this).text();
       // Constructing a queryURL using the animal name
       var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
-        animal + "&api_key=dc6zaTOxFJmzC&limit=10";
+        animal + "&api_key=dc6zaTOxFJmzC&limit=10&rating=pg-13";
       // Performing an AJAX request with the queryURL
       $.ajax({
           url: queryURL,
@@ -66,7 +66,7 @@ $("topicButtons").on("click", function() {
             animalDiv.append(p);
             animalDiv.append(animalImage);
             // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
-            $("#gifs-appear-here").prepend(animalDiv);
+            $("#addGif").prepend(animalDiv);
           }
         });
     });
