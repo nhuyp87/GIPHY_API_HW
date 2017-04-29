@@ -21,10 +21,8 @@ body {
 /*Where the appended buttons go*/
 
 #addButtons {
-	width: 100%;
-	overflow: auto;
 	padding: 20px;
-	height: 150px;
+	
 }
 
 
@@ -41,14 +39,14 @@ body {
 
 /*Where the GIFs go*/ 
 
-#addGif {
 
-	border-color: #6497b1;
-	border-style: solid;
-	border-width: 1px;
-	overflow: auto;
-	height: 500px;
+.animalDiv {
+	float: left;
+	margin: 10px;
+}
 
+.gif {
+	height: 200px; 
 }
 
 

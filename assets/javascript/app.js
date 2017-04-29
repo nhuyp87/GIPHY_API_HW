@@ -28,6 +28,8 @@ $("#searchButton").on("click", function () {
 
     button.append(topics[topics.length-1]); 
 
+    $("#formInput").val(""); 
+
 
 }); 
 
@@ -56,6 +58,9 @@ $(document).on("click", ".topicButtons", function() {
           for (var i = 0; i < results.length; i++) {
             // Creating and storing a div tag
             var animalDiv = $("<div>");
+            animalDiv.attr("class", "animalDiv");
+
+
             // Creating a paragraph tag with the result item's rating
             var p = $("<p>").text("Rating: " + results[i].rating);
             // Creating and storing an image tag
@@ -72,8 +77,8 @@ $(document).on("click", ".topicButtons", function() {
             animalImage.attr("data-state", "still");
             animalImage.attr("data-still", stillURL);
             // Appending the paragraph and image tag to the animalDiv
-            animalDiv.append(p);
             animalDiv.append(animalImage);
+            animalDiv.append(p);
             // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
             $("#addGif").prepend(animalDiv);
           }
