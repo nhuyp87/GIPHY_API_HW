@@ -2,13 +2,13 @@
 
 var topics = ["elephants", "pitbulls", "honey badgers"]; 
 
-// Take the topics in the array and create buttons in HTML. 
+// For loop - Take the topics in the array and create buttons in HTML. 
 
 for (var i=0; i<topics.length; i++) {
 
 var button = $("<button>").attr("class", "topicButtons"); 
 
-$(".test").append(button);
+$("#addButtons").append(button);
 
 button.append(topics[i]); 
 
