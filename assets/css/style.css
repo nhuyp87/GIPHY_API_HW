@@ -37,6 +37,7 @@ body {
 	border-radius: 4px;
 }
 
+
 /*Where the GIFs go*/ 
 
 
@@ -55,7 +56,7 @@ body {
 .navbar-fixed-bottom {
 
 	color: white;
-	background-color: #b3cde0; 
+	background-color: #3c5a6a; 
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 12px;
 	text-align: center;
@@ -66,5 +67,5 @@ body {
 
 
 #footer {
-	padding-top: 10px;
+	padding-top: 15px;
 }

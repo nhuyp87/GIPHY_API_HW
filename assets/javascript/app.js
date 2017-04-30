@@ -1,6 +1,6 @@
 // Array of strings related to a topic of interest. 
 
-var topics = ["elephants", "pitbulls", "honey badgers"]; 
+var topics = ["elephants", "pitbulls", "honey badgers", "platypus", "penguins", "turtles", "snails"]; 
 
 // For loop - Take the topics in the array and create buttons in HTML. 
 
@@ -77,8 +77,9 @@ $(document).on("click", ".topicButtons", function() {
             animalImage.attr("data-state", "still");
             animalImage.attr("data-still", stillURL);
             // Appending the paragraph and image tag to the animalDiv
-            animalDiv.append(animalImage);
             animalDiv.append(p);
+            animalDiv.append(animalImage);
+            
             // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
             $("#addGif").prepend(animalDiv);
           }
